@@ -1,0 +1,128 @@
+body{
+    font-family: 'Exo 2', sans-serif;
+    overflow: hidden;
+    /* background-color: black; */
+    color: white;
+  background-color: #3e3e55;
+}
+#main{
+  position: relative;
+  height: 100vh;
+}
+/* ------------------------ */
+
+.login{
+  position: relative;
+    height: 800px;
+    width: 1200px;
+    background-color:#3e3e55;
+    margin: 0px auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 35px;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* -- */
+.login_text{
+  position: relative; 
+}
+#img_logo{
+  width: 170px;
+  margin: -130px 0 20px 115px;
+}
+#icon_music{
+  position: absolute;
+  width: 1200px;
+  filter: brightness(0) invert(1) opacity(0.2);
+   -webkit-filter: brightness(0) invert(1) opacity(0.2);
+   opacity: 0.2;
+}
+#text_slogan{
+  margin: 0 0 50px 100px;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  /* font-weight: bold; */
+}
+#text_link{
+  margin: 30px 0 100px 88px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+
+/* ----------INPUT-------------- */
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 400px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right,  #661cdc,  #f97d99);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color:  #d81dac;
+  font-weight: 700;
+}
+
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+/* ------BUTTON------ */
+.btn_login{
+  width: 400px;
+  height: 45px;
+  background-color: #f97d99;
+  margin-top: 50px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.btn_login:hover{
+  background-color: #d81dac;
+}
